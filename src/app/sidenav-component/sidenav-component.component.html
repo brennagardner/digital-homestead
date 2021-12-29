@@ -1,0 +1,21 @@
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav mode="side" [opened]="isShowing">
+        <button mat-button class="menu-button">
+            <span><a routerLink="mainpage" routerLinkActive="active">Home</a></span>
+        </button>
+        <mat-divider></mat-divider>
+        <button mat-button class="menu-button">
+            <span><a routerLink="recipes" routerLinkActive="active">Recipes</a></span>
+        </button>
+        <mat-divider></mat-divider>
+        <button mat-button class="menu-button">
+            <span><a routerLink="about" routerLinkActive="active">About</a></span>
+        </button>
+        <mat-divider></mat-divider>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <app-header></app-header>
+        <router-outlet></router-outlet>
+        <app-footer></app-footer>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
